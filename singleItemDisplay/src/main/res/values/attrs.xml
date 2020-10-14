@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSingleItemDisplayView">
+
+        <attr name="sidColumnHeight" format="dimension"/>
+        <attr name="sidItemNameTextSize" format="dimension"/>
+        <attr name="sidItemTextSize" format="dimension"/>
+        <attr name="sidItemName" format="string"/>
+        <attr name="sidItemCount" format="integer"/>
+        <attr name="sidItemAmount" format="float"/>
+
+    </declare-styleable>
+</resources>

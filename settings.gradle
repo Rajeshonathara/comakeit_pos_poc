@@ -1,0 +1,7 @@
+include ':singleItemDisplay'
+include ':statusBar'
+include ':textButtonView'
+include ':pictureButton'
+include ':numberPad'
+include ':app'
+rootProject.name = "Pos_poc"

@@ -1,0 +1,116 @@
+{
+  "numKeys": [
+    {
+      "id": "1",
+      "identifier": "numKeyEquals",
+      "backgroundColor": "colorGrey",
+      "textColor": "colorWhite",
+      "text": "≡"
+    },
+    {
+      "id": "2",
+      "identifier": "numKeySeven",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "7"
+    },
+    {
+      "id": "3",
+      "identifier": "numKeyEight",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "8"
+    },
+    {
+      "id": "4",
+      "identifier": "numKeyNine",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "9"
+    },
+    {
+      "id": "5",
+      "identifier": "numKeyUpArrow",
+      "backgroundColor": "colorGrey",
+      "textColor": "colorWhite",
+      "text": "Λ"
+    },
+    {
+      "id": "6",
+      "identifier": "numKeyFour",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "4"
+    },
+    {
+      "id": "7",
+      "identifier": "numKeyFive",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "5"
+    },
+    {
+      "id": "8",
+      "identifier": "numKeySix",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "6"
+    },
+    {
+      "id": "9",
+      "identifier": "numKeyDownArrow",
+      "backgroundColor": "colorGrey",
+      "textColor": "colorWhite",
+      "text": "V"
+    },
+    {
+      "id": "10",
+      "identifier": "numKeyOne",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "1"
+    },
+    {
+      "id": "11",
+      "identifier": "numKeyTwo",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "2"
+    },
+    {
+      "id": "12",
+      "identifier": "numKeyThree",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "3"
+    },
+    {
+      "id": "13",
+      "identifier": "numKeyC",
+      "backgroundColor": "colorRed",
+      "textColor": "colorWhite",
+      "text": "C"
+    },
+    {
+      "id": "14",
+      "identifier": "numKeyX",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "X"
+    },
+    {
+      "id": "15",
+      "identifier": "numKeyZero",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "0"
+    },
+    {
+      "id": "16",
+      "identifier": "numKeyDot",
+      "backgroundColor": "colorDarkGrey",
+      "textColor": "colorWhite",
+      "text": "."
+    }
+  ]
+}

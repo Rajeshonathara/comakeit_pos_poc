@@ -1,0 +1,47 @@
+{
+  "statusBarItems": [
+    {
+      "id": "1",
+      "statusType": "RECEIPT",
+      "identifier": "custStatusBarItem_1_1",
+      "backgroundColor": "colorDarkDarkGrey",
+      "textColor": "colorWhite",
+      "text": "Receipt"
+    },
+    {
+      "id": "2",
+      "statusType": "CLERK_ID",
+      "identifier": "custStatusBarItem_1_2",
+      "backgroundColor": "colorDarkDarkGrey",
+      "textColor": "colorWhite",
+      "text": "Clerk - I"
+    },
+    {
+      "id": "3",
+      "statusType": "CURRENT_TIME",
+      "dateTimePatterns": "hh:mm:ss a",
+      "identifier": "custStatusBarItem_1_3",
+      "backgroundColor": "colorDarkDarkGrey",
+      "textColor": "colorWhite"
+
+    },
+    {
+      "id": "4",
+      "statusType": "CURRENT_DAY",
+      "dateTimePatterns": "EEE dd-MMM-yyyy",
+      "identifier": "custStatusBarItem_1_4",
+      "backgroundColor": "colorDarkDarkGrey",
+      "textColor": "colorWhite"
+    },
+    {
+      "id": "5",
+      "statusType": "ACTIVATED_FUNCTION_MODE",
+      "identifier": "custStatusBarItem_1_5",
+      "backgroundColor": "colorDarkDarkGrey",
+      "textColor": "colorWhite",
+      "text": "R ",
+      "textAllign": "center"
+
+    }
+  ]
+}

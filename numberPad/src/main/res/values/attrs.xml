@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPad">
+        <attr name="cnpNumColumnsPerRow" format="integer"/>
+        <attr name="cnpColumnHeight" format="dimension"/>
+        <attr name="cnpTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

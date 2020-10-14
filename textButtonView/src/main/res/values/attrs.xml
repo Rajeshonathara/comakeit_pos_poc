@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextButtonView">
+
+        <attr name="ctbNumColumnsPerRow" format="integer"/>
+        <attr name="ctbColumnHeight" format="dimension"/>
+        <attr name="ctbTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomStatusBarView">
+
+        <attr name="csbNumColumnsPerRow" format="integer"/>
+        <attr name="csbColumnHeight" format="dimension"/>
+        <attr name="csbTextSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>
