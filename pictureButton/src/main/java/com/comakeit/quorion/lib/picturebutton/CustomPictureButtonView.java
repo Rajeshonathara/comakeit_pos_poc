@@ -33,9 +33,7 @@ public class CustomPictureButtonView extends LinearLayout  {
      * The Cust column height.
      */
     private Integer custColumnHeight=null;
-    /**
-     * The Cust text size.
-     */
+
     private Integer custTextSize;
 
     /**
@@ -79,13 +77,13 @@ public class CustomPictureButtonView extends LinearLayout  {
         Integer custNumColumns = 6;
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.CustomPictureButtonView);
         try {
-            String custNumColumnsStr = typedArray.getString(R.styleable.CustomPictureButtonView_cpbNumColumnsPerRow);
-            if (custNumColumnsStr != null && custNumColumnsStr.length() > 0) {
+
+            if ( typedArray.hasValue(R.styleable.CustomPictureButtonView_cpbNumColumnsPerRow) ) {
+                String custNumColumnsStr = typedArray.getString(R.styleable.CustomPictureButtonView_cpbNumColumnsPerRow);
                 custNumColumns = Integer.valueOf(custNumColumnsStr);
             }
 
             if ( typedArray.hasValue(R.styleable.CustomPictureButtonView_cpbColumnHeight) ) {
-
                 custColumnHeight = Integer.valueOf(typedArray.getDimensionPixelSize(R.styleable.CustomPictureButtonView_cpbColumnHeight, 80));
             }
 

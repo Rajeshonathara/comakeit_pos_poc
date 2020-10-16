@@ -9,21 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 
 import java.util.HashSet;
 import java.util.List;
 
 /**
- * The type NumberPad adapter.
+ * The type NumericKeypad adapter.
  */
-public class NumberPadAdapter extends ArrayAdapter<NumKeyItem> {
+public class NumericKeypadAdapter extends ArrayAdapter<NumKeyItem> {
 
 
         /**
          * The Event handler.
          */
-        private NumberPad.EventHandler eventHandler;
+        private NumericKeypad.EventHandler eventHandler;
 
         private String parentPackageName;
 
@@ -50,13 +49,13 @@ public class NumberPadAdapter extends ArrayAdapter<NumKeyItem> {
 
 
         /**
-         * Instantiates a new NumberPad adapter.
+         * Instantiates a new NumericKeypad adapter.
          *
          * @param context   the context
          * @param numKeys   the num keys
          * @param resources the resources
          */
-        public NumberPadAdapter(Context context, List<NumKeyItem> numKeys, Resources resources, String parentPackageName, Integer custColumnHeight,  Integer custTextSize) {
+        public NumericKeypadAdapter(Context context, List<NumKeyItem> numKeys, Resources resources, String parentPackageName, Integer custColumnHeight, Integer custTextSize) {
                 super(context, R.layout.number_key, numKeys);
                 this.inflater = LayoutInflater.from(context);
                 this.resources = resources;
@@ -70,14 +69,15 @@ public class NumberPadAdapter extends ArrayAdapter<NumKeyItem> {
                 NumKeyItem numKeyItem = getItem(position);
 
                 // inflate item if it does not exist yet
-                if (view == null)
+                if (view == null) {
                         view = inflater.inflate(R.layout.number_key, parent, false);
+                }
                 Button button = (Button) view;
                 button.setOnClickListener(new NumPadItemOnClickListener());
 
 
                 //    button.setId(numKeyItem.getId());
-                button.setTag(button.getId(), numKeyItem.getIdentifier());
+                button.setTag(button.getId(), numKeyItem.getNumericKeypadType().toString());
                 if (!TextUtils.isEmpty(numKeyItem.getTextColor())) {
                         button.setTextColor(getColor(numKeyItem.getTextColor()));
                 }
@@ -124,12 +124,12 @@ public class NumberPadAdapter extends ArrayAdapter<NumKeyItem> {
                 public void onClick(View v) {
                         if (eventHandler != null) {
 
-                                eventHandler.onNumKeyPressItem((String) v.getTag(v.getId()));
+                                eventHandler.onNumKeyPressItem( (String)v.getTag(v.getId()));
                         }
                 }
         }
 
-        public void setEventHandler(NumberPad.EventHandler eventHandler) {
+        public void setEventHandler(NumericKeypad.EventHandler eventHandler) {
                 this.eventHandler = eventHandler;
         }
 }

@@ -6,11 +6,15 @@ package com.comakeit.quorion.lib.textbutton;
 public class CustomTextButtonItem {
 
 
-
     /**
      * The Id.
      */
     private int id;
+
+    /**
+     * The Item id.
+     */
+    private int itemId;
 
 
     /**
@@ -130,7 +134,6 @@ public class CustomTextButtonItem {
     }
 
 
-
     /**
      * Gets text color.
      *
@@ -147,6 +150,24 @@ public class CustomTextButtonItem {
      */
     public void setTextColor(String textColor) {
         this.textColor = textColor;
+    }
+
+    /**
+     * Gets item id.
+     *
+     * @return the item id
+     */
+    public int getItemId() {
+        return itemId;
+    }
+
+    /**
+     * Sets item id.
+     *
+     * @param itemId the item id
+     */
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 
 }

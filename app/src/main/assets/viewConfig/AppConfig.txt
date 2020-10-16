@@ -1,10 +1,11 @@
 {
-  "numKeys": [
+  "numericKeys": [
     {
       "id": "1",
       "identifier": "numKeyEquals",
       "backgroundColor": "colorGrey",
       "textColor": "colorWhite",
+      "keyType": "EQUALS",
       "text": "≡"
     },
     {
@@ -12,6 +13,7 @@
       "identifier": "numKeySeven",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "SEVEN",
       "text": "7"
     },
     {
@@ -19,6 +21,7 @@
       "identifier": "numKeyEight",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "EIGHT",
       "text": "8"
     },
     {
@@ -26,6 +29,7 @@
       "identifier": "numKeyNine",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "NINE",
       "text": "9"
     },
     {
@@ -33,6 +37,7 @@
       "identifier": "numKeyUpArrow",
       "backgroundColor": "colorGrey",
       "textColor": "colorWhite",
+      "keyType": "UP_ARROW",
       "text": "Λ"
     },
     {
@@ -40,6 +45,7 @@
       "identifier": "numKeyFour",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "FOUR",
       "text": "4"
     },
     {
@@ -47,6 +53,7 @@
       "identifier": "numKeyFive",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "FIVE",
       "text": "5"
     },
     {
@@ -54,6 +61,7 @@
       "identifier": "numKeySix",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "SIX",
       "text": "6"
     },
     {
@@ -61,6 +69,7 @@
       "identifier": "numKeyDownArrow",
       "backgroundColor": "colorGrey",
       "textColor": "colorWhite",
+      "keyType": "DOWN_ARROW",
       "text": "V"
     },
     {
@@ -68,6 +77,7 @@
       "identifier": "numKeyOne",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "ONE",
       "text": "1"
     },
     {
@@ -75,6 +85,7 @@
       "identifier": "numKeyTwo",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "TWO",
       "text": "2"
     },
     {
@@ -82,6 +93,7 @@
       "identifier": "numKeyThree",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "THREE",
       "text": "3"
     },
     {
@@ -89,6 +101,7 @@
       "identifier": "numKeyC",
       "backgroundColor": "colorRed",
       "textColor": "colorWhite",
+      "keyType": "CLEAR",
       "text": "C"
     },
     {
@@ -96,6 +109,7 @@
       "identifier": "numKeyX",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "CROSS",
       "text": "X"
     },
     {
@@ -103,6 +117,7 @@
       "identifier": "numKeyZero",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "ZERO",
       "text": "0"
     },
     {
@@ -110,6 +125,7 @@
       "identifier": "numKeyDot",
       "backgroundColor": "colorDarkGrey",
       "textColor": "colorWhite",
+      "keyType": "DOT",
       "text": "."
     }
   ]

@@ -37,7 +37,7 @@
                 android:orientation="vertical">
 
 
-                <com.comakeit.quorion.lib.numberpad.NumberPad
+                <com.comakeit.quorion.lib.numberpad.NumericKeypad
                     xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.numberpad"
                     android:id="@+id/numPad1"
                     android:layout_width="match_parent"

@@ -20,6 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -34,6 +38,8 @@ dependencies {
     implementation project(path: ':textButtonView')
     implementation project(path: ':statusBar')
     implementation project(path: ':singleItemDisplay')
+    implementation project(path: ':itemDisplayUint')
+    implementation project(path: ':util')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

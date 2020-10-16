@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomItemDisplayUnitView">
+
+
+        <attr name="iduColumnHeight" format="dimension"/>
+        <attr name="iduTextSize" format="dimension"/>
+        <attr name="iduItemCountTextWidth" format="dimension"/>
+        <attr name="iduItemNameTextWidth" format="dimension"/>
+        <attr name="iduItemAmountTextWidth" format="dimension"/>
+        <attr name="iduSelectionBackGroundColor" format="color"/>
+        <attr name="iduSelectionTextColor" format="color"/>
+
+
+        <attr name="iduHeaderHeight" format="dimension"/>
+        <attr name="iduFooterHeight" format="dimension"/>
+        <attr name="iduBodyHeight" format="dimension"/>
+
+        <attr name="iduHeaderBackgroundColor" format="color"/>
+        <attr name="iduHeaderTextColor" format="color"/>
+
+
+    </declare-styleable>
+</resources>

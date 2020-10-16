@@ -3,6 +3,8 @@ package com.comakeit.quorion.lib.numberpad;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 
+import com.comakeit.quorion.lib.util.NumericKeypadType;
+
 /**
  * The type Num key item.
  */
@@ -13,12 +15,10 @@ public class NumKeyItem {
      */
     private int id;
 
-
     /**
      * The Id.
      */
     private String identifier;
-
 
     /**
      * The Background color.
@@ -37,6 +37,11 @@ public class NumKeyItem {
      * The Background image.
      */
     private Drawable backgroundImage;
+
+    /**
+     * The Numeric keypad type.
+     */
+    private NumericKeypadType numericKeypadType;
 
     /**
      * Gets id.
@@ -93,7 +98,6 @@ public class NumKeyItem {
     }
 
 
-
     /**
      * Gets text color.
      *
@@ -147,4 +151,23 @@ public class NumKeyItem {
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
+
+    /**
+     * Gets numeric keypad type.
+     *
+     * @return the numeric keypad type
+     */
+    public NumericKeypadType getNumericKeypadType() {
+        return numericKeypadType;
+    }
+
+    /**
+     * Sets numeric keypad type.
+     *
+     * @param numericKeypadTypeStr the numeric keypad type str
+     */
+    public void setNumericKeypadType(String numericKeypadTypeStr) {
+        this.numericKeypadType = NumericKeypadType.valueOf( numericKeypadTypeStr);
+    }
+
 }

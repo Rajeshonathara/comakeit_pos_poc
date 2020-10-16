@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_item_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#AA9A9B"
+    android:fontFamily="sans-serif-condensed"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:scaleType="fitXY"
+
+    android:text=""
+    android:textColor="@color/design_default_color_on_secondary"
+    android:textSize="13dp"
+
+    />

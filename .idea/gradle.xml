@@ -12,11 +12,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/itemDisplayUint" />
             <option value="$PROJECT_DIR$/numberPad" />
             <option value="$PROJECT_DIR$/pictureButton" />
             <option value="$PROJECT_DIR$/singleItemDisplay" />
             <option value="$PROJECT_DIR$/statusBar" />
             <option value="$PROJECT_DIR$/textButtonView" />
+            <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -79,14 +79,20 @@ public class CustomStatusBarView extends LinearLayout  {
         Integer custNumColumns = 5;
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.CustomStatusBarView);
         try {
-            String custNumColumnsStr = typedArray.getString(R.styleable.CustomStatusBarView_csbNumColumnsPerRow);
-            if (custNumColumnsStr != null && custNumColumnsStr.length() > 0) {
+
+            if ( typedArray.hasValue(R.styleable.CustomStatusBarView_csbNumColumnsPerRow) ) {
+                String custNumColumnsStr = typedArray.getString(R.styleable.CustomStatusBarView_csbNumColumnsPerRow);
                 custNumColumns = Integer.valueOf(custNumColumnsStr);
             }
 
             if ( typedArray.hasValue(R.styleable.CustomStatusBarView_csbColumnHeight) ) {
 
                 custColumnHeight = Integer.valueOf(typedArray.getDimensionPixelSize(R.styleable.CustomStatusBarView_csbColumnHeight, 80));
+            }
+
+            if ( typedArray.hasValue(R.styleable.CustomStatusBarView_csbTextSize) ) {
+
+                custTextSize = Integer.valueOf(typedArray.getDimensionPixelSize(R.styleable.CustomStatusBarView_csbTextSize, 10));
             }
 
         } finally {

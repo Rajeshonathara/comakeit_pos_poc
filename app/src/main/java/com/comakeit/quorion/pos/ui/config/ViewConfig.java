@@ -1,12 +1,14 @@
 package com.comakeit.quorion.pos.ui.config;
 
 import android.content.res.AssetManager;
-import android.text.TextUtils;
 
+import com.comakeit.quorion.lib.itemdisplayuint.CustomItemDisplayUnitItem;
 import com.comakeit.quorion.lib.picturebutton.CustomPictureButtonItem;
 import com.comakeit.quorion.lib.numberpad.NumKeyItem;
 import com.comakeit.quorion.lib.statusbar.CustomStatusBarItem;
 import com.comakeit.quorion.lib.textbutton.CustomTextButtonItem;
+import com.comakeit.quorion.lib.master.Item;
+import com.comakeit.quorion.lib.master.ItemStock;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,7 +39,7 @@ public class ViewConfig {
             String string_of_json_array = readRawTextFile(assets,"viewConfig/AppConfig.txt");
             JSONObject obj = new JSONObject(string_of_json_array);
 
-            JSONArray array = obj.getJSONArray("numKeys");
+            JSONArray array = obj.getJSONArray("numericKeys");
             JSONObject row = null;
             for (int i = 0; i < array.length(); i++) {
                 row = array.getJSONObject(i);
@@ -48,6 +50,8 @@ public class ViewConfig {
                 numKeyItem.setTextColor(row.getString("textColor"));
                 numKeyItem.setText(row.getString("text"));
                 numKeyItem.setIdentifier(row.getString("identifier"));
+                numKeyItem.setNumericKeypadType(row.getString("keyType"));
+
                 result.add(numKeyItem);
             }
 
@@ -139,6 +143,7 @@ public class ViewConfig {
                 customTextButtonItem.setBackgroundColor(row.getString("backgroundColor"));
 
                 customTextButtonItem.setIdentifier(row.getString("identifier"));
+                customTextButtonItem.setItemId(row.getInt("itemId"));
 
                 if(row.has("src")) {
                     customTextButtonItem.setSrc(row.getString("src"));
@@ -200,6 +205,46 @@ public class ViewConfig {
             e.printStackTrace();
         }
         return result;
+
+    }
+
+    public void fillItemStock(ItemStock itemStock, AssetManager assets){
+            List<CustomStatusBarItem> result = new ArrayList<>();
+            try {
+                int id;
+                String text;
+                //String string_of_json_array = determineNumKeyJson();
+                String string_of_json_array = readRawTextFile(assets,"viewConfig/AppConfigStockItems.txt");
+                JSONObject obj = new JSONObject(string_of_json_array);
+
+                JSONArray array = obj.getJSONArray("items");
+                JSONObject row = null;
+                for (int i = 0; i < array.length(); i++) {
+                    row = array.getJSONObject(i);
+                    int count =0;
+                    Item item = new Item();
+
+                    item.setId(row.getInt("id"));
+
+                    item.setName(row.getString("name"));
+                    item.setPrice(row.getDouble("price"));
+
+                    if(row.has("count")) {
+                        count =row.getInt("count");
+                    }
+                    itemStock.addItemToStock(item,count);
+                }
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+    }
+
+    public List<CustomItemDisplayUnitItem> determineCustomItemDisplayUnitItems(AssetManager assets) {
+
+        return new ArrayList<CustomItemDisplayUnitItem>();
+
 
     }
 }

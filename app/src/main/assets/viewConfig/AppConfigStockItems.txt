@@ -1,0 +1,52 @@
+{
+    "items":[
+        {"id":"1", "name":"Small Mixed Salad ","price":"10", "count":"30"},
+        {"id":"2", "name":"Small Green Salad ","price":"20", "count":"30"},
+        {"id":"3", "name":"Shrimp Cockta ","price":"30", "count":"30"},
+        {"id":"4", "name":"Tomatoes with Mozzarella ","price":"25", "count":"30"},
+        {"id":"5", "name":"Fresh Mushrooms","price":"22", "count":"30"},
+        {"id":"6", "name":"Backed Feta Cheese ","price":"27", "count":"30"},
+
+        {"id":"7", "name":"Lobster Cream Soup ","price":"12", "count":"30"},
+        {"id":"8", "name":"Smoked Eel Soup ","price":"22", "count":"30"},
+        {"id":"9", "name":"Cream Tomato Soup ","price":"20", "count":"30"},
+        {"id":"10", "name":"French Onion Soup ","price":"13", "count":"30"},
+        {"id":"11", "name":"Beef Soup","price":"28", "count":"30"},
+        {"id":"12", "name":"Meat Compilation","price":"29", "count":"30"},
+
+        {"id":"13", "name":"Rump Steak with Mushrooms ","price":"10", "count":"30"},
+        {"id":"14", "name":"Rump Steak Lyon Style" ,"price":"20", "count":"30"},
+        {"id":"15", "name":"Argentinean Rump Steak ","price":"30", "count":"30"},
+        {"id":"16", "name":"Pork Medallions Mushroom ","price":"25", "count":"30"},
+        {"id":"17", "name":"Pork Medallio Pepper ","price":"22", "count":"30"},
+        {"id":"18", "name":"Pork Steak Valais Style ","price":"27", "count":"30"},
+
+        {"id":"19", "name":"Juicy Steak ","price":"12", "count":"30"},
+        {"id":"20", "name":"Chicken Stea ","price":"22", "count":"30"},
+        {"id":"21", "name":"Stuffed Chick Breasts ","price":"20", "count":"30"},
+        {"id":"22", "name":"Cornish Game Hen ","price":"13", "count":"30"},
+        {"id":"23", "name":"Sliced Turk ","price":"28", "count":"30"},
+        {"id":"24", "name":"Sliced Turke Indian","price":"29", "count":"30"},
+
+        {"id":"25", "name":"Schnitzel Cordon Bleu ","price":"10", "count":"30"},
+        {"id":"26", "name":"Schnitzel Hawaii ","price":"20", "count":"30"},
+        {"id":"27", "name":"Schnitzel with Mushrooms","price":"30", "count":"30"},
+        {"id":"28", "name":"Jager Schnitzel ","price":"25", "count":"30"},
+        {"id":"29", "name":"Curry Schnitzel ","price":"22", "count":"30"},
+        {"id":"30", "name":"Gypsy Schnitzel","price":"27", "count":"30"},
+
+        {"id":"31", "name":"Tender Pork Schnitzel ","price":"12", "count":"30"},
+        {"id":"32", "name":"Schnitzel Viennese ","price":"22", "count":"30"},
+        {"id":"33", "name":"Redfish Filets ","price":"20", "count":"30"},
+        {"id":"34", "name":"Plaice Homemade Style ","price":"13", "count":"30"},
+        {"id":"35", "name":"Fried Plaice ","price":"28", "count":"30"},
+        {"id":"36", "name":"Fine Plaice Meuniere ","price":"29", "count":"30"},
+
+        {"id":"37", "name":"Lemon Sole Filets","price":"10", "count":"30"},
+        {"id":"38", "name":"Pangasius Filets ","price":"20", "count":"30"},
+        {"id":"39", "name":"Freschly caught eel ","price":"30", "count":"30"},
+        {"id":"40", "name":"Scambled Eggs with Shrimp ","price":"25", "count":"30"},
+        {"id":"41", "name":"Herring Plate ","price":"22", "count":"30"},
+        {"id":"42", "name":"Herring Pot Housewife ","price":"27", "count":"30"}
+    ]
+}

@@ -13,35 +13,66 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="1082dp"
             android:background="#212B37"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
-                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:background="@color/colorGrey"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/click_text_view_id"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    />
+
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="350dp"
                 android:layout_margin="5dp"
                 android:background="@color/colorGrey"
                 android:orientation="vertical">
 
-                <com.comakeit.quorion.lib.numberpad.NumberPad
-                    xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.numberpad"
+                <com.comakeit.quorion.lib.itemdisplayuint.CustomItemDisplayUnitView xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.itemdisplayuint"
+                    android:id="@+id/itemDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorDarkDarkGrey"
+                    app:iduItemCountTextWidth="5dp"
+                    app:iduTextSize="9sp"
+                    app:iduItemNameTextWidth="200dp"
+                    app:iduItemAmountTextWidth="10dp"
+                    app:iduSelectionBackGroundColor="@color/colorDarkDarkGrey"
+                    app:iduSelectionTextColor="@color/colorWhite"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorGrey"
+                android:orientation="vertical">
+
+                <com.comakeit.quorion.lib.numberpad.NumericKeypad xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.numberpad"
                     android:id="@+id/numPad"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorDarkDarkGrey" />
+                    android:background="@color/colorDarkDarkGrey"
+                    app:cnpNumColumnsPerRow="4"
+                    app:cnpTextSize="30sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -52,53 +83,50 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="600dp"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+
                 android:background="#212B37"
                 android:orientation="vertical">
 
-
-                <LinearLayout
+                <GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
+                    android:columnCount="1"
+                    android:orientation="vertical"
                     android:background="@color/colorGreen"
-                    android:orientation="vertical">
+                    android:rowCount="4"
+                    android:verticalSpacing="0dp">
 
-                    <DigitalClock
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textSize="20sp"/>
-                </LinearLayout>
+                    <com.comakeit.quorion.lib.statusbar.CustomStatusBarView xmlns:customPicButNs="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.statusbar"
+                        android:id="@+id/cust_status_bar_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/colorDarkDarkGrey"
+                        app:csbNumColumnsPerRow="5"
+                        app:csbTextSize="16sp"/>
+                    <com.comakeit.quorion.lib.singleitemdisplay.CustomSingleItemDisplayView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/colorWhite"
+                        app:sidItemNameTextSize="20sp"
+                        app:sidItemTextSize="16sp"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@color/colorGreen"
-                    android:orientation="vertical">
-
-                    <com.comakeit.quorion.lib.picturebutton.CustomPictureButtonView
-                        xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.picturebutton"
+                    <com.comakeit.quorion.lib.picturebutton.CustomPictureButtonView xmlns:customPicButNs="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.picturebutton"
                         android:id="@+id/cust_picture_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorDarkDarkGrey" />
-                </LinearLayout>
+                        android:background="@color/colorDarkDarkGrey"
+                        app:cpbColumnHeight="40dp"
+                        app:cpbNumColumnsPerRow="6"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="#212B37"
-                    android:orientation="vertical">
-
-                    <com.comakeit.quorion.lib.textbutton.CustomTextButtonView
-                        xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.textbutton"
+                    <com.comakeit.quorion.lib.textbutton.CustomTextButtonView xmlns:numPadNS="http://schemas.android.com/apk/res/com.comakeit.quorion.lib.textbutton"
                         android:id="@+id/cust_text_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorDarkDarkGrey" />
-                </LinearLayout>
+                        android:background="@color/colorDarkDarkGrey"
+                        app:ctbColumnHeight="40dp"
+                        app:ctbNumColumnsPerRow="6"
+                        app:ctbTextSize="15dp"/>
+                </GridLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

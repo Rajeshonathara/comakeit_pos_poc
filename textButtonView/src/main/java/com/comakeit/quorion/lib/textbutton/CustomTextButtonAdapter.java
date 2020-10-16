@@ -77,7 +77,7 @@ public class CustomTextButtonAdapter extends ArrayAdapter<CustomTextButtonItem> 
                 button.setOnClickListener(new CustomTextButtonItemOnClickListener());
 
                 //    button.setId(numKeyItem.getId());
-                button.setTag(button.getId(), CustomTextButtonItem.getIdentifier());
+                button.setTag(button.getId(), CustomTextButtonItem.getItemId());
                 if (!TextUtils.isEmpty(CustomTextButtonItem.getTextColor())) {
                         button.setTextColor(getColor(CustomTextButtonItem.getTextColor()));
                 }
@@ -129,7 +129,7 @@ public class CustomTextButtonAdapter extends ArrayAdapter<CustomTextButtonItem> 
                 public void onClick(View v) {
                         if (eventHandler != null) {
 
-                                eventHandler.onCustomTextButtonPressItem((String) v.getTag(v.getId()));
+                                eventHandler.onCustomTextButtonPressItem(String.valueOf( v.getTag(v.getId())));
                         }
                 }
         }

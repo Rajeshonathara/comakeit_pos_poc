@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * The type Numer pad.
  */
-public class NumberPad extends LinearLayout  {
+public class NumericKeypad extends LinearLayout  {
 
 
     /**
@@ -45,7 +45,7 @@ public class NumberPad extends LinearLayout  {
      * @param context the context
      * @param attrs   the attrs
      */
-    public NumberPad(Context context, @Nullable AttributeSet attrs) {
+    public NumericKeypad(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initControl(context, attrs);
 
@@ -82,8 +82,8 @@ public class NumberPad extends LinearLayout  {
         Integer custNumColumns = 6;
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.NumberPad);
         try {
-            String custNumColumnsStr = typedArray.getString(R.styleable.NumberPad_cnpNumColumnsPerRow);
-            if (custNumColumnsStr != null && custNumColumnsStr.length() > 0) {
+            if ( typedArray.hasValue(R.styleable.NumberPad_cnpNumColumnsPerRow) ) {
+                String custNumColumnsStr = typedArray.getString(R.styleable.NumberPad_cnpNumColumnsPerRow);
                 custNumColumns = Integer.valueOf(custNumColumnsStr);
             }
             if ( typedArray.hasValue(R.styleable.NumberPad_cnpColumnHeight) ) {
@@ -142,7 +142,7 @@ public class NumberPad extends LinearLayout  {
      */
     public void setEventHandler(EventHandler eventHandler) {
         this.eventHandler = eventHandler;
-        ((NumberPadAdapter) grid.getAdapter()).setEventHandler(eventHandler);
+        ((NumericKeypadAdapter) grid.getAdapter()).setEventHandler(eventHandler);
     }
 
 
@@ -166,7 +166,7 @@ public class NumberPad extends LinearLayout  {
      */
     public void updateNumberPad(List<NumKeyItem> events, String parentPackageName) {
         // update grid
-        grid.setAdapter(new NumberPadAdapter(getContext(), events, getResources(), parentPackageName, custColumnHeight, custTextSize));
+        grid.setAdapter(new NumericKeypadAdapter(getContext(), events, getResources(), parentPackageName, custColumnHeight, custTextSize));
         assignClickHandlers();
 
 
